@@ -1,0 +1,33 @@
+{
+    "name": "@rss-reader/backend",
+    "version": "0.0.0",
+    "private": true,
+    "license": "(MIT or CC0 1.0)",
+    "author": {
+        "name": "electrovir",
+        "url": "https://github.com/electrovir"
+    },
+    "sideEffects": false,
+    "type": "module",
+    "main": "src/index.ts",
+    "module": "src/index.ts",
+    "types": "src/index.ts",
+    "scripts": {
+        "compile": "virmator compile",
+        "start": "tsx src/server.ts",
+        "test": "tsx --test src/**/*.test.ts"
+    },
+    "dependencies": {
+        "@rest-vir/implement-service": "^1.4.0",
+        "@rest-vir/run-service": "^1.4.0",
+        "@rss-reader/common": "^0.0.0",
+        "fast-xml-parser": "^5.3.0"
+    },
+    "devDependencies": {
+        "tsx": "^4.20.3",
+        "typescript": "^5.9.3"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}
